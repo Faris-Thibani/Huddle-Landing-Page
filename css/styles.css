@@ -1,0 +1,134 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap');
+
+/* Custom Properties */
+
+:root {
+    /* Colors */
+    --violet: hsl(257, 40%, 49%);
+    --softMagenta: hsl(300, 69%, 71%);
+}
+
+/* Utilities */
+.flex {
+    display: flex;
+}
+
+/* styles */
+
+
+.wrapper {
+    min-height: 100vh;
+    min-height: 100vh;
+    text-align: center;
+    background-color: var(--violet);
+}
+
+.logo {
+    width: 120px;
+    margin: 2em 0 4em 0;
+}
+
+.container {
+    flex-direction: column;
+    width: 78%;
+    margin: 0 auto;
+    padding: 1em 0;
+    font-weight: 400;
+
+}
+
+.headline {
+    font-family: poppins, sans-serif;
+    color: white;
+    margin-top: 3em;
+}
+
+.sub-headline {
+    font-family: "open-sans", sans-serif;
+    margin-top: 1em;
+    color: white;
+
+}
+
+.cta {
+    width: 70%;
+    align-self: center;
+    padding: .4em;
+    border-radius: 100px;
+    border: none;
+    margin-top: 1em;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.cta:hover {
+    cursor: pointer;
+    background-color: var(--softMagenta);
+}
+
+.social {
+    margin-top: 3em;
+}
+
+.icon {
+    padding: 0.5em;
+    border: 1px solid white;
+    margin-inline: 0.3em;
+    border-radius: 100%;
+    color: white;
+}
+
+.icon:hover {
+    cursor: pointer;
+    background-color: var(--softMagenta);
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(0, 0%, 100%);
+}
+
+
+@media all and (min-width: 630px) {
+    .logo {
+        width: 150px;
+    }
+
+    .main-container {
+        display: flex;
+        gap: 2em;
+    }
+
+    .text {
+        width: 50%;
+        text-align: left;
+    }
+
+    .headline {
+        font-size: 3rem;
+        margin-top: 0;
+    }
+
+    .sub-headline {
+        font-size: 1.3rem;
+        font-weight: 400;
+    }
+
+    .illustration {
+        width: 50%;
+    }
+
+    .cta {
+        width: 40%;
+        padding: 1em;
+    }
+
+    .social {
+        text-align: right;
+    }
+
+}
