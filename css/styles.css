@@ -16,13 +16,11 @@
 
 /* styles */
 
-body{
-    background-image: url("/images/bg-mobile.svg");
-}
 .wrapper {
     min-height: 100vh;
     text-align: center;
-    background-image: url("images/bg-mobile.svg");
+    background-image: url("../images/bg-mobile.svg");
+    background-repeat: no-repeat;
     background-color: var(--violet);
 }
     
@@ -98,6 +96,9 @@ body{
 
 
 @media all and (min-width: 630px) {
+    .wrapper{
+        background-image: url("../images/bg-desktop.svg");
+    }
     .logo {
         width: 150px;
     }
